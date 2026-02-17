@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <title>Free Meditation Classes in Osseo, MN | Minnesota Meditation Center</title>
+    <title>Minnesota Meditation Center | Osseo, MN</title>
     <meta name="description" content="Free guided meditation classes in Osseo, Minnesota. No experience needed. Wednesday 4-5pm, Saturday 3-4:30pm. Serving Maple Grove, Brooklyn Park & Twin Cities northwest suburbs.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mnmeditationcenter.org/">
@@ -462,6 +462,33 @@
         @media (min-width: 769px) {
             .hamburger { display: none; }
         }
+    
+        /* ── MOBILE HERO FIX ── */
+        @media (max-width: 768px) {
+            .hero {
+                height: auto !important;
+                min-height: 320px;
+                padding: 48px 20px 40px !important;
+            }
+            .hero::before {
+                background-position: center top;
+            }
+            .hero h1 { font-size: 28px !important; }
+            .hero p { font-size: 15px !important; }
+            .nav-links {
+                padding: 12px 20px 20px !important;
+                background: #FFFBF7;
+                border-bottom: 2px solid #F4A460;
+            }
+            .nav-links a {
+                padding: 12px 0 !important;
+                font-size: 16px !important;
+                border-bottom: 1px solid rgba(74,55,40,0.08);
+                display: block;
+            }
+            .nav-links a:last-child { border-bottom: none; }
+        }
+
     </style>
 </head>
 <body>
@@ -485,18 +512,18 @@
     <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-subtitle">Welcome to Our Community</div>
-            <h1>Find Peace Through Meditation</h1>
-            <p>A Dhammakaya Buddhist temple welcoming all who seek inner peace and mindfulness. All meditation classes are FREE. No experience necessary.</p>
+            <img src="images/logo.png" alt="Minnesota Meditation Center" style="height:72px; width:auto; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));">
+            <h1>Minnesota Meditation Center</h1>
+            <p>A Buddhist meditation center in Osseo, MN. Guided by an experienced monk. Open to everyone, every week.</p>
             <a href="schedule.html" class="cta-button">View Class Schedule</a>
         </div>
     </section>
 
     <!-- WELCOME -->
     <section class="welcome">
-        <h2>Welcome to Minnesota Meditation Center</h2>
-        <p>Minnesota Meditation Center is a Dhammakaya Buddhist temple welcoming all who seek inner peace and mindfulness. Whether you're a complete beginner or an experienced practitioner, you'll find a warm community here.</p>
-        <p>All meditation classes are <strong>FREE</strong>. No experience necessary. Comfortable seating options available for everyone.</p>
+        <h2>A Place to Slow Down</h2>
+        <p>Minnesota Meditation Center has offered guided meditation in Osseo since 2006. Sessions are led by a resident Buddhist monk and are open to anyone — regardless of background, belief, or experience level.</p>
+        <p>Classes run every Wednesday and Saturday. There is no cost to attend, no registration required, and no experience necessary. Just show up.</p>
     </section>
 
     <div class="divider"></div>

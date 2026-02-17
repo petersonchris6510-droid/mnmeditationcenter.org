@@ -127,6 +127,33 @@
             footer { padding: 40px 20px 24px; }
         }
         @media (min-width: 769px) { .hamburger { display: none; } }
+    
+        /* ── MOBILE HERO FIX ── */
+        @media (max-width: 768px) {
+            .hero {
+                height: auto !important;
+                min-height: 320px;
+                padding: 48px 20px 40px !important;
+            }
+            .hero::before {
+                background-position: center top;
+            }
+            .hero h1 { font-size: 28px !important; }
+            .hero p { font-size: 15px !important; }
+            .nav-links {
+                padding: 12px 20px 20px !important;
+                background: #FFFBF7;
+                border-bottom: 2px solid #F4A460;
+            }
+            .nav-links a {
+                padding: 12px 0 !important;
+                font-size: 16px !important;
+                border-bottom: 1px solid rgba(74,55,40,0.08);
+                display: block;
+            }
+            .nav-links a:last-child { border-bottom: none; }
+        }
+
     </style>
 </head>
 <body>

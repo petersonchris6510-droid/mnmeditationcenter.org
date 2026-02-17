@@ -246,6 +246,33 @@
         @media (min-width: 769px) {
             .hamburger { display: none; }
         }
+    
+        /* ── MOBILE HERO FIX ── */
+        @media (max-width: 768px) {
+            .hero {
+                height: auto !important;
+                min-height: 320px;
+                padding: 48px 20px 40px !important;
+            }
+            .hero::before {
+                background-position: center top;
+            }
+            .hero h1 { font-size: 28px !important; }
+            .hero p { font-size: 15px !important; }
+            .nav-links {
+                padding: 12px 20px 20px !important;
+                background: #FFFBF7;
+                border-bottom: 2px solid #F4A460;
+            }
+            .nav-links a {
+                padding: 12px 0 !important;
+                font-size: 16px !important;
+                border-bottom: 1px solid rgba(74,55,40,0.08);
+                display: block;
+            }
+            .nav-links a:last-child { border-bottom: none; }
+        }
+
     </style>
 
     <script type="application/ld+json">
@@ -329,7 +356,7 @@
 
     <div class="page-header">
         <h1>Visit Our Center</h1>
-        <p>We're located in Osseo, Minnesota and welcome visitors from all backgrounds.</p>
+        <p>We're located in Osseo, Minnesota. Whether it's your first time or your fiftieth, you'll find the same quiet welcome.</p>
     </div>
 
     <div class="section">
