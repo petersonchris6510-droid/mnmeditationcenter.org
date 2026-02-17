@@ -87,6 +87,10 @@
             .nav-links a:last-child { border-bottom: none; }
         }
 
+    
+        @media (max-width: 768px) {
+            .mobile-only { display: list-item !important; }
+        }
     </style>
 </head>
 <body>
@@ -98,6 +102,8 @@
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
+                    <li style="display:none;" class="mobile-only"><a href="tel:+17638626122" style="color:#D2691E;">📞 (763) 862-6122</a></li>
+            <li style="display:none;" class="mobile-only"><a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#D2691E;">📍 Get Directions</a></li>
         </ul>
     </nav>
     <div class="content">
