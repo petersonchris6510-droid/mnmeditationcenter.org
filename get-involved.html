@@ -184,6 +184,27 @@
             .footer-inner { grid-template-columns: 1fr; }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mnmeditationcenter.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Get Involved",
+          "item": "https://mnmeditationcenter.org/get-involved.html"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -292,7 +313,10 @@
             </div>
             <div>
                 <h3>Contact</h3>
-                <p>📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">224 1st Ave NW<br>Osseo, MN 55369</a></p>
+                <p><address style="font-style:normal;">📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">
+                <span itemprop="streetAddress">224 1st Ave NW</span><br>
+                <span itemprop="addressLocality">Osseo</span>, <span itemprop="addressRegion">MN</span> <span itemprop="postalCode">55369</span>
+                </a></address></p>
                 <p>📞 <a href="tel:+17638626122">(763) 862-6122</a></p>
             </div>
             <div>

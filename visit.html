@@ -188,6 +188,68 @@
             .footer-inner { grid-template-columns: 1fr; }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mnmeditationcenter.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Visit",
+          "item": "https://mnmeditationcenter.org/visit.html"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Minnesota Meditation Center located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minnesota Meditation Center is located at 224 1st Ave NW, Osseo, MN 55369. We serve the Minneapolis northwest suburbs including Maple Grove, Brooklyn Park, and Plymouth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register in advance to visit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registration is encouraged but not required. Walk-ins are always welcome."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Minnesota Meditation Center only for Buddhists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. People of all faiths and no faith are welcome. Many visitors practice meditation for stress relief and mental clarity without adopting Buddhist beliefs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I attend if I have physical limitations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We provide chairs for those who cannot sit on the floor. Let us know about any limitations when you arrive and we will make sure you are comfortable."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -293,7 +355,10 @@
             </div>
             <div>
                 <h3>Contact</h3>
-                <p>📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">224 1st Ave NW<br>Osseo, MN 55369</a></p>
+                <p><address style="font-style:normal;">📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">
+                <span itemprop="streetAddress">224 1st Ave NW</span><br>
+                <span itemprop="addressLocality">Osseo</span>, <span itemprop="addressRegion">MN</span> <span itemprop="postalCode">55369</span>
+                </a></address></p>
                 <p>📞 <a href="tel:+17638626122">(763) 862-6122</a></p>
             </div>
             <div>

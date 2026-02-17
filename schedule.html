@@ -175,6 +175,166 @@
             .footer-inner { grid-template-columns: 1fr; }
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mnmeditationcenter.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Schedule",
+          "item": "https://mnmeditationcenter.org/schedule.html"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Free Meditation Classes at Minnesota Meditation Center",
+      "itemListElement": [
+        {
+          "@type": "Event",
+          "position": 1,
+          "name": "Wednesday Guided Meditation Class",
+          "description": "Free guided meditation class for all experience levels. No registration required.",
+          "startDate": "2026-02-18T16:00",
+          "endDate": "2026-02-18T17:00",
+          "eventSchedule": {
+            "@type": "Schedule",
+            "byDay": "https://schema.org/Wednesday",
+            "startTime": "16:00",
+            "endTime": "17:00",
+            "repeatFrequency": "P1W"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "Minnesota Meditation Center",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "224 1st Ave NW",
+              "addressLocality": "Osseo",
+              "addressRegion": "MN",
+              "postalCode": "55369"
+            }
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "Minnesota Meditation Center",
+            "url": "https://mnmeditationcenter.org"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "isAccessibleForFree": true
+        },
+        {
+          "@type": "Event",
+          "position": 2,
+          "name": "Saturday Meditation Session",
+          "description": "Free 90-minute meditation session. Chairs and floor cushions available.",
+          "startDate": "2026-02-21T15:00",
+          "endDate": "2026-02-21T16:30",
+          "eventSchedule": {
+            "@type": "Schedule",
+            "byDay": "https://schema.org/Saturday",
+            "startTime": "15:00",
+            "endTime": "16:30",
+            "repeatFrequency": "P1W"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "Minnesota Meditation Center",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "224 1st Ave NW",
+              "addressLocality": "Osseo",
+              "addressRegion": "MN",
+              "postalCode": "55369"
+            }
+          },
+          "organizer": {
+            "@type": "Organization",
+            "name": "Minnesota Meditation Center",
+            "url": "https://mnmeditationcenter.org"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "eventStatus": "https://schema.org/EventScheduled",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "isAccessibleForFree": true
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When should I arrive for my first meditation class?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend arriving 10-15 minutes early for your first visit. This gives you time to remove your shoes, get settled, and ask any questions before the session begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens during a meditation class at Minnesota Meditation Center?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each session includes a brief introduction (5 min), guided meditation instruction (10-15 min), silent meditation practice (20-30 min), and a gentle closing with time for questions (5-10 min)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I wear to a meditation class?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Comfortable, loose-fitting clothing. You will be removing your shoes at the entrance — socks or bare feet are both fine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the meditation classes really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, all meditation classes at Minnesota Meditation Center are completely free. No donations are required. We welcome everyone regardless of financial situation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register in advance for meditation classes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registration is encouraged but not required. Walk-ins are always welcome at Minnesota Meditation Center in Osseo, MN."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -259,7 +419,10 @@
             </div>
             <div>
                 <h3>Contact</h3>
-                <p>📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">224 1st Ave NW<br>Osseo, MN 55369</a></p>
+                <p><address style="font-style:normal;">📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">
+                <span itemprop="streetAddress">224 1st Ave NW</span><br>
+                <span itemprop="addressLocality">Osseo</span>, <span itemprop="addressRegion">MN</span> <span itemprop="postalCode">55369</span>
+                </a></address></p>
                 <p>📞 <a href="tel:+17638626122">(763) 862-6122</a></p>
             </div>
             <div>
