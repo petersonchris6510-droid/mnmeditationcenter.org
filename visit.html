@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit - MN Meditation Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nunito', sans-serif; background-color: #FFFBF7; color: #4A3728; overflow-x: hidden; }
+
+        nav {
+            background-color: #FFFBF7;
+            border-bottom: 2px solid #F4A460;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 700; color: #D2691E; text-decoration: none; }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; color: #4A3728; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: #D2691E; }
+
+        .page-header { background: linear-gradient(135deg, rgba(210,105,30,0.9) 0%, rgba(244,164,96,0.85) 100%); color: #FFFBF7; padding: 60px 20px; text-align: center; }
+        .page-header h1 { font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 700; margin-bottom: 12px; }
+        .page-header p { font-size: 18px; opacity: 0.95; }
+
+        .section { max-width: 1100px; margin: 0 auto; padding: 52px 20px; }
+        h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 700; color: #4A3728; margin-bottom: 20px; }
+        p { font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+
+        .contact-card { background: white; border-radius: 12px; padding: 36px; box-shadow: 0 2px 8px rgba(74,55,40,0.08); margin-bottom: 32px; }
+        .contact-card h3 { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 600; color: #D2691E; margin-bottom: 16px; }
+        .contact-card a { color: #D2691E; font-weight: 600; text-decoration: none; }
+        .contact-card a:hover { text-decoration: underline; }
+
+        .map-embed { border-radius: 12px; overflow: hidden; margin-bottom: 32px; }
+        .map-embed iframe { width: 100%; height: 360px; border: none; display: block; }
+
+        .steps { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 2px 8px rgba(74,55,40,0.06); }
+        .step { margin-bottom: 24px; padding-left: 56px; position: relative; }
+        .step:last-child { margin-bottom: 0; }
+        .step-num { position: absolute; left: 0; top: 0; width: 38px; height: 38px; background-color: #D2691E; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; }
+        .step h4 { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 600; color: #4A3728; margin-bottom: 6px; }
+        .step p { font-size: 15px; opacity: 0.85; margin-bottom: 0; }
+
+        .two-col-bring { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .bring-yes { background-color: #E8F5E9; border-left: 4px solid #4CAF50; padding: 28px; border-radius: 8px; }
+        .bring-no { background-color: #FFEBEE; border-left: 4px solid #F44336; padding: 28px; border-radius: 8px; }
+        .bring-yes h3 { font-family: 'Montserrat', sans-serif; color: #4CAF50; font-size: 20px; margin-bottom: 14px; }
+        .bring-no h3 { font-family: 'Montserrat', sans-serif; color: #F44336; font-size: 20px; margin-bottom: 14px; }
+        ul.bring { list-style: none; }
+        ul.bring li { margin-bottom: 10px; padding-left: 24px; position: relative; font-size: 15px; }
+        .bring-yes ul.bring li::before { content: '✓'; color: #4CAF50; font-weight: bold; position: absolute; left: 0; }
+        .bring-no ul.bring li::before { content: '✗'; color: #F44336; font-weight: bold; position: absolute; left: 0; }
+
+        .faq { background-color: white; border-radius: 12px; padding: 40px; box-shadow: 0 2px 8px rgba(74,55,40,0.06); }
+        .faq-item { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid rgba(74,55,40,0.1); }
+        .faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .faq-q { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 600; color: #D2691E; margin-bottom: 8px; }
+        .faq-a { font-size: 15px; line-height: 1.7; }
+
+        footer { background-color: #D2691E; color: #FFFBF7; padding: 28px 20px 20px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 18px; }
+        footer h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #FFFBF7; margin-bottom: 10px; }
+        footer p, footer a { color: #FFFBF7; opacity: 0.92; text-decoration: none; font-size: 14px; line-height: 1.6; }
+        footer a:hover { opacity: 1; text-decoration: underline; }
+        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 16px; border-top: 1px solid rgba(255,251,247,0.3); text-align: center; font-size: 13px; opacity: 0.82; }
+        .footer-bottom p { margin-bottom: 4px; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 30px; }
+            .two-col-bring { grid-template-columns: 1fr; }
+            .nav-links { gap: 14px; }
+            .nav-links a { font-size: 12px; }
+            .footer-inner { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">MN Meditation Center</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="visit.html" class="active">Visit</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Visit Our Center</h1>
+        <p>We're located in Osseo, Minnesota and welcome visitors from all backgrounds.</p>
+    </div>
+
+    <div class="section">
+        <h2>Find Us</h2>
+        <div class="contact-card">
+            <h3>Minnesota Meditation Center</h3>
+            <p><strong>Address:</strong> 224 1st Ave NW, Osseo, MN 55369</p>
+            <p><strong>Phone:</strong> <a href="tel:+17638626122">(763) 862-6122</a></p>
+            <p><strong>Office Hours:</strong> Visit during any scheduled class time</p>
+        </div>
+
+        <div class="map-embed">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.123!2d-93.4015!3d45.1195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b35b0b0b0b0b0b%3A0x0!2s224+1st+Ave+NW%2C+Osseo%2C+MN+55369!5e0!3m2!1sen!2sus!4v1234567890"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <h2>Planning Your First Visit</h2>
+        <div class="steps">
+            <div class="step"><div class="step-num">1</div><h4>Choose a Class Time</h4><p>Check our Schedule page and pick a time that works for you. Wednesday or Saturday classes are great for first visits.</p></div>
+            <div class="step"><div class="step-num">2</div><h4>Arrive Early</h4><p>Plan to arrive 10-15 minutes before class starts to find parking, remove shoes, and get settled.</p></div>
+            <div class="step"><div class="step-num">3</div><h4>Remove Your Shoes</h4><p>When you enter, you'll see a shoe area just inside the door. Please remove shoes there. Socks or bare feet are both fine.</p></div>
+            <div class="step"><div class="step-num">4</div><h4>Find the Meditation Hall</h4><p>Follow signs or ask anyone nearby — they'll happily point you in the right direction.</p></div>
+            <div class="step"><div class="step-num">5</div><h4>Choose Your Seat</h4><p>Select either a floor cushion or a chair. There's no right choice — pick what works for your body.</p></div>
+            <div class="step"><div class="step-num">6</div><h4>Introduce Yourself</h4><p>Let someone know it's your first visit. We'll make sure you feel welcome and answer any questions.</p></div>
+        </div>
+    </div>
+
+    <div style="background-color:#FFF8F2; padding: 4px 0;">
+        <div class="section">
+            <h2>What to Bring (and Not Bring)</h2>
+            <div class="two-col-bring">
+                <div class="bring-yes">
+                    <h3>Bring</h3>
+                    <ul class="bring">
+                        <li>Yourself and an open mind</li>
+                        <li>Comfortable, loose clothing</li>
+                        <li>Socks (optional)</li>
+                        <li>Water bottle (optional)</li>
+                        <li>Any questions you have</li>
+                    </ul>
+                </div>
+                <div class="bring-no">
+                    <h3>Leave at Home</h3>
+                    <ul class="bring">
+                        <li>Shoes (removed at entrance)</li>
+                        <li>Strong perfumes or scents</li>
+                        <li>Expectations of "perfect" meditation</li>
+                        <li>Your phone (or silence it completely)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-q">Do I need to register in advance?</div>
+                <div class="faq-a">Registration is encouraged but not required. Walk-ins are always welcome.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">I have physical limitations. Can I still participate?</div>
+                <div class="faq-a">Absolutely. We provide chairs for those who cannot sit on the floor. Let us know about any limitations when you arrive and we'll make sure you're comfortable.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Is this only for Buddhists?</div>
+                <div class="faq-a">Not at all. People of all faiths and no faith are welcome. Many visitors practice meditation for stress relief and mental clarity without adopting Buddhist beliefs.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">What if my mind won't stop thinking?</div>
+                <div class="faq-a">That's completely normal — especially for beginners. A busy mind is part of the process. Our instructors will help you understand that there's no such thing as failing at meditation.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h3>Minnesota Meditation Center</h3>
+                <p>A Dhammakaya Buddhist temple welcoming all who seek inner peace, mindfulness, and spiritual growth.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>📍 224 1st Ave NW<br>Osseo, MN 55369</p>
+                <p>📞 <a href="tel:+17638626122">(763) 862-6122</a></p>
+            </div>
+            <div>
+                <h3>Weekly Schedule</h3>
+                <p><strong>Wednesday:</strong> 4:00 PM – 5:00 PM<br>
+                <strong>Saturday:</strong> 3:00 PM – 4:30 PM<br>
+                <strong>Sunday:</strong> 9:30 AM (Thai Services)</p>
+                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All classes free • No experience necessary</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Minnesota Meditation Center. All rights reserved.</p>
+            <p>Dhammakaya Buddhist Temple & Meditation Center | 501(c)(3) Nonprofit</p>
+            <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MN Meditation Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nunito', sans-serif; background-color: #FFFBF7; color: #4A3728; overflow-x: hidden; }
+
+        nav {
+            background-color: #FFFBF7;
+            border-bottom: 2px solid #F4A460;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 700; color: #D2691E; text-decoration: none; }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; color: #4A3728; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: #D2691E; }
+
+        .page-header {
+            background: linear-gradient(135deg, rgba(210,105,30,0.9) 0%, rgba(244,164,96,0.85) 100%);
+            color: #FFFBF7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .page-header h1 { font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 700; margin-bottom: 12px; }
+        .page-header p { font-size: 18px; opacity: 0.95; }
+
+        .section { max-width: 1100px; margin: 0 auto; padding: 52px 20px; }
+        .section-alt { background-color: #FFF8F2; }
+        .section-alt .section-inner { max-width: 1100px; margin: 0 auto; padding: 52px 20px; }
+
+        h2 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: 700; color: #4A3728; margin-bottom: 20px; }
+        p { font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .image-wrap { border-radius: 12px; overflow: hidden; }
+        .image-wrap img { width: 100%; display: block; object-fit: cover; object-position: right center; }
+
+        ul.styled { list-style: none; margin: 16px 0; }
+        ul.styled li { padding-left: 24px; position: relative; margin-bottom: 12px; font-size: 16px; line-height: 1.6; }
+        ul.styled li::before { content: '•'; color: #D2691E; font-size: 20px; position: absolute; left: 0; }
+
+        .mission-box {
+            background-color: #D2691E;
+            color: #FFFBF7;
+            border-radius: 12px;
+            padding: 48px;
+            text-align: center;
+        }
+        .mission-box h2 { color: #FFFBF7; font-size: 28px; margin-bottom: 16px; }
+        .mission-box p { font-size: 18px; opacity: 0.95; margin-bottom: 0; }
+
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 32px; }
+        .card { background: white; border-radius: 10px; padding: 28px; text-align: center; box-shadow: 0 2px 8px rgba(74,55,40,0.08); }
+        .card-icon { font-size: 40px; margin-bottom: 14px; }
+        .card h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 600; color: #D2691E; margin-bottom: 10px; }
+        .card p { font-size: 15px; margin-bottom: 0; }
+
+        footer { background-color: #D2691E; color: #FFFBF7; padding: 28px 20px 20px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 18px; }
+        footer h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #FFFBF7; margin-bottom: 10px; }
+        footer p, footer a { color: #FFFBF7; opacity: 0.92; text-decoration: none; font-size: 14px; line-height: 1.6; }
+        footer a:hover { opacity: 1; text-decoration: underline; }
+        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 16px; border-top: 1px solid rgba(255,251,247,0.3); text-align: center; font-size: 13px; opacity: 0.82; }
+        .footer-bottom p { margin-bottom: 4px; }
+
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; gap: 28px; }
+            .page-header h1 { font-size: 30px; }
+            .nav-links { gap: 14px; }
+            .nav-links a { font-size: 12px; }
+            .footer-inner { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">MN Meditation Center</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>About Us</h1>
+        <p>A Dhammakaya Buddhist temple serving the Twin Cities community since 2006.</p>
+    </div>
+
+    <div class="section">
+        <div class="two-col">
+            <div>
+                <h2>The Dhammakaya Buddhist Tradition</h2>
+                <p>Minnesota Meditation Center follows the Dhammakaya tradition of Buddhism, which emphasizes meditation as the path to inner peace and spiritual understanding. Our practice focuses on:</p>
+                <ul class="styled">
+                    <li><strong>Meditation for Inner Peace:</strong> Learning to find stillness and clarity through guided meditation</li>
+                    <li><strong>Mindfulness in Daily Life:</strong> Bringing awareness and compassion to everyday experiences</li>
+                    <li><strong>Community Support:</strong> Growing together in a welcoming, supportive environment</li>
+                    <li><strong>Accessible Teachings:</strong> Buddhist wisdom presented in ways that anyone can understand and apply</li>
+                </ul>
+                <p>Whether you're new to meditation or have been practicing for years, our tradition welcomes seekers of all backgrounds.</p>
+            </div>
+            <div class="image-wrap">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/City_pilgrimage_organized_by_Wat_Phra_Dhammakaya.jpg/1920px-City_pilgrimage_organized_by_Wat_Phra_Dhammakaya.jpg" alt="Dhammakaya Buddhist Tradition">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-alt">
+        <div class="section-inner">
+            <div class="mission-box">
+                <h2>Our Mission</h2>
+                <p>To provide a peaceful, welcoming space where anyone can learn meditation, find inner peace, and connect with a supportive community — completely free of charge.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Everyone Is Welcome</h2>
+        <p>Our center serves both the broader Twin Cities community and Minnesota's Thai and Lao communities. We offer English-language meditation classes and traditional Thai-language services.</p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🧘</div>
+                <h3>Beginners</h3>
+                <p>Never meditated before? Perfect. Our instructors guide you through every step.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌍</div>
+                <h3>All Backgrounds</h3>
+                <p>Buddhist or not, religious or secular — everyone is welcome here.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🙏</div>
+                <h3>Thai & Lao Community</h3>
+                <p>Traditional Sunday services in Thai language serve our Southeast Asian community.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💛</div>
+                <h3>Always Free</h3>
+                <p>All meditation classes are free. No fees, no donations required.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h3>Minnesota Meditation Center</h3>
+                <p>A Dhammakaya Buddhist temple welcoming all who seek inner peace, mindfulness, and spiritual growth.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>📍 224 1st Ave NW<br>Osseo, MN 55369</p>
+                <p>📞 <a href="tel:+17638626122">(763) 862-6122</a></p>
+            </div>
+            <div>
+                <h3>Weekly Schedule</h3>
+                <p><strong>Wednesday:</strong> 4:00 PM – 5:00 PM<br>
+                <strong>Saturday:</strong> 3:00 PM – 4:30 PM<br>
+                <strong>Sunday:</strong> 9:30 AM (Thai Services)</p>
+                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All classes free • No experience necessary</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Minnesota Meditation Center. All rights reserved.</p>
+            <p>Dhammakaya Buddhist Temple & Meditation Center | 501(c)(3) Nonprofit</p>
+            <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
+        </div>
+    </footer>
+
+</body>
+</html>
