@@ -175,6 +175,37 @@
             .nav-links a { font-size: 12px; }
             .footer-inner { grid-template-columns: 1fr; }
         }
+
+        /* Mobile nav */
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .nav-toggle span { width: 24px; height: 2px; background-color: #4A3728; border-radius: 2px; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #FFFBF7; border-bottom: 2px solid #F4A460; padding: 16px 24px; gap: 16px; z-index: 99; }
+            .nav-links.open { display: flex; }
+            .nav-toggle { display: flex; }
+        }
+
+        /* ── Mobile improvements ───────────────────────────── */
+        @media (max-width: 768px) {
+            .hero h1, .page-header h1 { font-size: 28px !important; }
+            .hero p, .page-header p { font-size: 15px !important; }
+            .section, .section-alt, .section-inner { padding: 32px 16px !important; }
+            .grid-2, .grid-3, .cards, .feature-grid, .info-grid, .steps-grid, .ways-grid { 
+                grid-template-columns: 1fr !important; 
+            }
+            .card, .feature-card, .info-card, .step-card, .way-card { 
+                padding: 20px !important; 
+            }
+            h2 { font-size: 22px !important; }
+            h3 { font-size: 18px !important; }
+            .hero { padding: 48px 16px !important; }
+            .hero-buttons { flex-direction: column; gap: 10px; align-items: center; }
+            .btn { display: block; text-align: center; width: 100%; max-width: 280px; margin: 0 auto 10px !important; }
+            table { font-size: 13px !important; }
+            th, td { padding: 10px 8px !important; }
+            .footer-inner { grid-template-columns: 1fr !important; gap: 18px !important; }
+            .footer-nav { gap: 14px !important; }
+        }
     </style>
 
     <script type="application/ld+json">
@@ -341,13 +372,18 @@
 
     <nav>
         <a href="index.html" class="nav-logo">MN Meditation Center</a>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="schedule.html" class="active">Schedule</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="team.html">Our Teacher</a></li>
         </ul>
+
+        <div class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </div>
     </nav>
 
     <div class="page-header">
