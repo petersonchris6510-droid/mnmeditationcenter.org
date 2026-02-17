@@ -206,6 +206,33 @@
             .footer-inner { grid-template-columns: 1fr !important; gap: 18px !important; }
             .footer-nav { gap: 14px !important; }
         }
+
+        /* ── MOBILE RESPONSIVE ── */
+        @media (max-width: 768px) {
+            nav { padding: 0 16px; flex-wrap: wrap; height: auto; min-height: 56px; }
+            .nav-logo { font-size: 15px; padding: 12px 0; }
+            .nav-links { display: none; }
+            .nav-links.open { display: flex; flex-direction: column; width: 100%; padding: 8px 0 16px; gap: 4px; }
+            .nav-links a { padding: 10px 0; font-size: 15px; }
+            .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 12px 0; }
+            .hamburger span { display: block; width: 24px; height: 2px; background: #4A3728; border-radius: 2px; }
+            .hero { padding: 40px 20px 36px; }
+            .hero h1 { font-size: 26px; }
+            .hero p { font-size: 15px; }
+            .section { padding: 32px 16px; }
+            .section h2 { font-size: 22px; }
+            .cards { grid-template-columns: 1fr !important; gap: 16px; }
+            .card { padding: 24px 20px; }
+            .schedule-grid { grid-template-columns: 1fr !important; }
+            .two-col { grid-template-columns: 1fr !important; }
+            .steps { grid-template-columns: 1fr !important; }
+            .footer-inner { grid-template-columns: 1fr !important; gap: 24px; }
+            footer { padding: 40px 20px 24px; }
+            .stat-row { flex-direction: column; gap: 16px; }
+        }
+        @media (min-width: 769px) {
+            .hamburger { display: none; }
+        }
     </style>
 
     <script type="application/ld+json">
@@ -489,6 +516,17 @@
             <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
         </div>
     </footer>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+    </script>
 
 </body>
 </html>
