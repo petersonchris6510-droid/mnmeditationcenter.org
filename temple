@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZTM8R2LJJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4ZTM8R2LJJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Dhammakaya Buddhist Temple in Minnesota | Minnesota Meditation Center</title>
+    <meta name="description" content="Minnesota Meditation Center is a Dhammakaya Buddhist temple in Osseo, MN. Traditional Sunday services, merit-making, and ceremonies for the Thai and Buddhist community of the Twin Cities.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mnmeditationcenter.org/temple.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mnmeditationcenter.org/temple.html">
+    <meta property="og:title" content="Dhammakaya Buddhist Temple in Minnesota | Minnesota Meditation Center">
+    <meta property="og:description" content="A Dhammakaya Buddhist temple in Osseo, MN serving the Thai and Buddhist community of the Twin Cities. Traditional services, merit-making, and ceremonies.">
+    <meta property="og:image" content="images/hero-congregation.png">
+    <meta property="og:site_name" content="Minnesota Meditation Center">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BuddhistTemple",
+      "name": "Minnesota Meditation Center",
+      "alternateName": ["MMC", "Wat Phra Dhammakaya Minnesota", "วัดพระธรรมกายมินเนโซตา"],
+      "url": "https://mnmeditationcenter.org",
+      "logo": "https://mnmeditationcenter.org/apple-touch-icon.png",
+      "image": "images/hero-congregation.png",
+      "description": "A Dhammakaya Buddhist temple in Osseo, Minnesota. Part of the global Dhammakaya network. Serving the Thai, Lao, and broader Buddhist community of the Twin Cities with traditional services, merit-making ceremonies, and weekly meditation.",
+      "telephone": "+15612299694",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "224 1st Ave NW",
+        "addressLocality": "Osseo",
+        "addressRegion": "MN",
+        "postalCode": "55369",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.1195,
+        "longitude": -93.4015
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:30",
+          "closes": "11:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/mmc55369/",
+        "https://en.dhammakaya.net/branches/"
+      ],
+      "priceRange": "Free",
+      "areaServed": [
+        "Osseo, MN",
+        "Maple Grove, MN",
+        "Brooklyn Park, MN",
+        "Twin Cities, MN",
+        "Minnesota"
+      ],
+      "nonprofit": true,
+      "isPartOf": {
+        "@type": "Organization",
+        "name": "Dhammakaya Foundation",
+        "url": "https://en.dhammakaya.net"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mnmeditationcenter.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Buddhist Temple",
+          "item": "https://mnmeditationcenter.org/temple.html"
+        }
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nunito', sans-serif; background-color: #FFFBF7; color: #4A3728; overflow-x: hidden; }
+
+        nav {
+            background-color: #FFFBF7;
+            border-bottom: 2px solid #F4A460;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-logo { font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 700; color: #D2691E; text-decoration: none; }
+        .nav-links { display: flex; gap: 28px; list-style: none; }
+        .nav-links a { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 500; color: #4A3728; text-decoration: none; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: #D2691E; }
+
+        .page-header {
+            background: linear-gradient(135deg, rgba(139,90,43,0.92) 0%, rgba(210,105,30,0.88) 100%);
+            color: #FFFBF7;
+            padding: 70px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .page-header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('images/hero-congregation.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.18;
+            z-index: 0;
+        }
+        .page-header-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+        .page-header h1 { font-family: 'Montserrat', sans-serif; font-size: 42px; font-weight: 700; margin-bottom: 14px; line-height: 1.2; }
+        .page-header p { font-size: 18px; opacity: 0.95; line-height: 1.6; }
+
+        .section { max-width: 860px; margin: 0 auto; padding: 52px 20px; }
+        .section-wide { max-width: 1100px; margin: 0 auto; padding: 52px 20px; }
+        .section-alt { background-color: #FFF8F2; }
+
+        h2 { font-family: 'Montserrat', sans-serif; font-size: 28px; font-weight: 700; color: #4A3728; margin-bottom: 18px; }
+        h3 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 600; color: #D2691E; margin-bottom: 10px; }
+        p { font-size: 16px; line-height: 1.8; margin-bottom: 16px; }
+
+        .divider { width: 60px; height: 3px; background-color: #D2691E; margin: 0 auto 40px; }
+
+        .ceremony-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 28px;
+        }
+        .ceremony-card {
+            background: white;
+            border-radius: 10px;
+            padding: 24px;
+            border-left: 4px solid #D2691E;
+            box-shadow: 0 2px 8px rgba(74,55,40,0.06);
+        }
+        .ceremony-card h3 { font-size: 17px; margin-bottom: 8px; }
+        .ceremony-card p { font-size: 14px; line-height: 1.6; margin-bottom: 0; opacity: 0.85; }
+
+        .network-box {
+            background-color: #F4EDE4;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+        }
+        .network-box p { max-width: 640px; margin: 0 auto; }
+
+        .sunday-block {
+            background-color: #D2691E;
+            color: #FFFBF7;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+        }
+        .sunday-block h2 { color: #FFFBF7; margin-bottom: 10px; }
+        .sunday-block p { opacity: 0.95; margin-bottom: 8px; }
+        .sunday-block .time { font-family: 'Montserrat', sans-serif; font-size: 22px; font-weight: 700; margin: 16px 0; }
+        .sunday-block a { color: #FFFBF7; text-decoration: underline; }
+
+        .cta-block {
+            background-color: #FFF3E0;
+            border-top: 2px solid #F4A460;
+            padding: 36px 20px;
+            text-align: center;
+        }
+        .cta-block p { font-size: 17px; color: #4A3728; margin-bottom: 14px; line-height: 1.6; }
+        .cta-block a.cta-link {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #FFFBF7;
+            background-color: #D2691E;
+            padding: 12px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        footer { background-color: #D2691E; color: #FFFBF7; padding: 28px 20px 20px; }
+        .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 18px; }
+        footer h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #FFFBF7; margin-bottom: 10px; }
+        footer p, footer a { color: #FFFBF7; opacity: 0.92; text-decoration: none; font-size: 14px; line-height: 1.6; }
+        footer a:hover { opacity: 1; text-decoration: underline; }
+        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 16px; border-top: 1px solid rgba(255,251,247,0.3); text-align: center; font-size: 13px; opacity: 0.82; }
+        .footer-bottom p { margin-bottom: 4px; }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 28px !important; }
+            .page-header p { font-size: 15px !important; }
+            .ceremony-grid { grid-template-columns: 1fr; }
+            .network-box, .sunday-block { padding: 28px 20px; }
+            .footer-inner { grid-template-columns: 1fr; }
+            .section, .section-wide { padding: 32px 16px !important; }
+            h2 { font-size: 22px !important; }
+            nav { padding: 0 16px; flex-wrap: wrap; height: auto; min-height: 56px; }
+            .nav-logo { font-size: 15px; padding: 12px 0; }
+            .nav-links { display: none; }
+            .nav-links.open { display: flex; flex-direction: column; width: 100%; padding: 8px 0 16px; gap: 4px; }
+            .nav-links a { padding: 10px 0; font-size: 15px; border-bottom: 1px solid rgba(74,55,40,0.08); display: block; }
+            .nav-links a:last-child { border-bottom: none; }
+            .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 12px 0; }
+            .hamburger span { display: block; width: 24px; height: 2px; background: #4A3728; border-radius: 2px; }
+        }
+        @media (min-width: 769px) { .hamburger { display: none; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="nav-logo">MN Meditation Center</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-header-content">
+            <h1>A Dhammakaya Buddhist Temple in Minnesota</h1>
+            <p>Minnesota Meditation Center is a place of practice, community, and refuge — rooted in the Dhammakaya tradition and open to all.</p>
+        </div>
+    </div>
+
+    <div class="section" style="text-align:center; padding-bottom: 0;">
+        <div class="divider"></div>
+    </div>
+
+    <!-- THE TRADITION -->
+    <div class="section">
+        <h2>The Tradition</h2>
+        <p>Minnesota Meditation Center is part of the <a href="https://en.dhammakaya.net/" target="_blank" style="color:#D2691E;">Dhammakaya tradition</a> of Theravada Buddhism, which traces its roots to Wat Phra Dhammakaya in Pathum Thani, Thailand — one of the most visited Buddhist temples in the world. The tradition emphasizes the practice of meditation as the foundation of spiritual development, ethical living, and service to community.</p>
+        <p>The Dhammakaya method teaches that peace is not found outside — it arises from within, through consistent and sincere practice. This understanding guides everything that happens at our center, from weekday guided meditation to Sunday ceremony.</p>
+        <p>MMC is one of 16 Dhammakaya centers in the United States and part of a global community of practitioners in more than 30 countries. <a href="https://en.dhammakaya.net/branches/" target="_blank" style="color:#D2691E;">View the worldwide network.</a></p>
+    </div>
+
+    <!-- SUNDAY SERVICES -->
+    <div class="section-alt">
+        <div class="section">
+            <div class="sunday-block">
+                <h2>Sunday Services</h2>
+                <p>Traditional Dhammakaya Buddhist practice, conducted in Thai.</p>
+                <div class="time">Sunday · 9:30 AM</div>
+                <p>224 1st Ave NW, Osseo, MN 55369</p>
+                <p style="margin-top:12px; font-size:14px;">For ceremony dates, special observances, and community updates, <a href="https://www.facebook.com/mmc55369/" target="_blank">follow us on Facebook.</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CEREMONIES -->
+    <div class="section-wide" style="padding-top: 48px; padding-bottom: 48px;">
+        <h2 style="text-align:center; margin-bottom:8px;">Ceremonies & Observances</h2>
+        <p style="text-align:center; opacity:0.75; margin-bottom:0;">Annual and recurring observances held at the temple throughout the year.</p>
+        <div class="ceremony-grid">
+            <div class="ceremony-card">
+                <h3>Visakha Puja Day</h3>
+                <p>Commemorating the birth, enlightenment, and passing of the Buddha. One of the most significant days in the Buddhist calendar.</p>
+            </div>
+            <div class="ceremony-card">
+                <h3>Magha Puja Day</h3>
+                <p>Honoring the assembly of 1,250 enlightened disciples who gathered to hear the Buddha teach without prior arrangement.</p>
+            </div>
+            <div class="ceremony-card">
+                <h3>Asalha Puja Day</h3>
+                <p>Marking the Buddha's first teaching after his enlightenment — the beginning of the Dhamma as a living tradition.</p>
+            </div>
+            <div class="ceremony-card">
+                <h3>Buddhist Lent (Vassa)</h3>
+                <p>The three-month rains retreat observed by resident monks. A period of intensified practice and study.</p>
+            </div>
+            <div class="ceremony-card">
+                <h3>Kathina Robe Offering</h3>
+                <p>The annual offering of robes to the monastic community at the close of Buddhist Lent — an act of dana with deep merit.</p>
+            </div>
+            <div class="ceremony-card">
+                <h3>Merit-Making & Dana</h3>
+                <p>Regular opportunities for offering food, supplies, and support to the monks — a central practice of the lay Buddhist community.</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:28px; font-size:15px; opacity:0.75;">Specific dates vary each year. <a href="https://www.facebook.com/mmc55369/" target="_blank" style="color:#D2691E;">Check Facebook for the current calendar.</a></p>
+    </div>
+
+    <!-- COMMUNITY -->
+    <div class="section-alt">
+        <div class="section">
+            <h2>A Home for Minnesota's Buddhist Community</h2>
+            <p>Minnesota Meditation Center has served the Twin Cities' Thai and Lao Buddhist community since 2006. For families who have made Minnesota home, the temple is a place to maintain practice, observe tradition, and pass it on to the next generation.</p>
+            <p>All are welcome at Sunday services — whether you are part of the Thai community, a practitioner from another Buddhist tradition, or someone coming to the temple for the first time. The center also offers <a href="schedule.html" style="color:#D2691E;">English-language meditation classes</a> every Wednesday and Saturday for those newer to practice.</p>
+        </div>
+    </div>
+
+    <!-- NETWORK -->
+    <div class="section">
+        <div class="network-box">
+            <h2>Part of a Global Tradition</h2>
+            <p>Minnesota Meditation Center is affiliated with the Dhammakaya Foundation and is one of more than 100 centers worldwide carrying this tradition forward — across the United States, Europe, Asia, and beyond. We share one practice, one lineage, and one purpose.</p>
+            <p style="margin-top:14px;"><a href="https://en.dhammakaya.net/" target="_blank" style="color:#D2691E; font-weight:600;">Learn more at en.dhammakaya.net →</a></p>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-block">
+        <p>All classes and services are free. Everyone is welcome. Come as you are.</p>
+        <a href="visit.html" class="cta-link">Plan Your Visit</a>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h3>Minnesota Meditation Center</h3>
+                <p>A Dhammakaya Buddhist temple welcoming all who seek inner peace, mindfulness, and community.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p><address style="font-style:normal;">📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">
+                224 1st Ave NW<br>Osseo, MN 55369
+                </a></address></p>
+                <p>📞 <a href="tel:+15612299694" style="color:#FFFBF7;">(561) 229-9694</a></p>
+                <p style="font-size:13px; opacity:0.85;">📞 <a href="tel:+17638626122" style="color:#FFFBF7;">(763) 862-6122</a> (main office)</p>
+                <p><a href="https://wa.me/15612299694" target="_blank" style="color:#FFFBF7; display:inline-flex; align-items:center; gap:6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFFBF7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    WhatsApp
+                </a></p>
+            </div>
+            <div>
+                <h3>Weekly Schedule</h3>
+                <p><strong>Wednesday:</strong> 4:00 PM – 5:00 PM<br>
+                <strong>Saturday:</strong> 3:00 PM – 4:30 PM<br>
+                <strong>Sunday:</strong> 9:30 AM (Thai Services)</p>
+                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All classes free • No experience necessary</p>
+            </div>
+        </div>
+        <div class="footer-nav" style="max-width:1100px; margin:0 auto 18px; padding-top:0; display:flex; gap:24px; flex-wrap:wrap;">
+            <a href="index.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Home</a>
+            <a href="about.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">About</a>
+            <a href="schedule.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Schedule</a>
+            <a href="visit.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Visit</a>
+            <a href="get-involved.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Get Involved</a>
+            <a href="team.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Meet the Team</a>
+            <a href="temple.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Buddhist Temple</a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="https://www.facebook.com/mmc55369/" target="_blank" style="color:#FFFBF7; opacity:0.95; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FFFBF7"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Follow us on Facebook
+                </a>
+            </p>
+            <p style="margin-top:10px;">© 2026 Minnesota Meditation Center. All rights reserved.</p>
+            <p>Dhammakaya Buddhist Temple & Meditation Center | 501(c)(3) Nonprofit</p>
+            <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+        }
+    </script>
+
+</body>
+</html>
