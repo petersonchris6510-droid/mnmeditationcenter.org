@@ -81,7 +81,6 @@
         "https://en.dhammakaya.net/"
       ],
       "priceRange": "Free",
-      "servesCuisine": "",
       "areaServed": [
         "Osseo, MN",
         "Maple Grove, MN",
@@ -90,36 +89,31 @@
         "Rogers, MN",
         "Champlin, MN"
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Free Meditation Classes",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Wednesday Guided Meditation",
-              "description": "Free guided meditation class every Wednesday 4:00-5:00 PM"
-            },
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Saturday Meditation Session",
-              "description": "Free 90-minute meditation session every Saturday 3:00-4:30 PM"
-            },
-            "price": "0",
-            "priceCurrency": "USD"
-          }
-        ]
-      },
       "nonprofit": true
     }
     </script>
-    <title>About - MN Meditation Center</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mnmeditationcenter.org/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://mnmeditationcenter.org/about.html"
+        }
+      ]
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -182,6 +176,25 @@
         .card h3 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 600; color: #D2691E; margin-bottom: 10px; }
         .card p { font-size: 15px; margin-bottom: 0; }
 
+        .cta-block {
+            background-color: #FFF3E0;
+            border-top: 2px solid #F4A460;
+            padding: 36px 20px;
+            text-align: center;
+        }
+        .cta-block p { font-size: 17px; color: #4A3728; margin-bottom: 14px; line-height: 1.6; }
+        .cta-block a.cta-link {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #FFFBF7;
+            background-color: #D2691E;
+            padding: 12px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
         footer { background-color: #D2691E; color: #FFFBF7; padding: 28px 20px 20px; }
         .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; margin-bottom: 18px; }
         footer h3 { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600; color: #FFFBF7; margin-bottom: 10px; }
@@ -192,26 +205,170 @@
 
         @media (max-width: 768px) {
             .two-col { grid-template-columns: 1fr; gap: 28px; }
-            .page-header h1 { font-size: 30px; }
-            .nav-links { gap: 14px; }
-            .nav-links a { font-size: 12px; }
+            .page-header h1 { font-size: 28px !important; }
+            .page-header p { font-size: 15px !important; }
+            .cards { grid-template-columns: 1fr; }
             .footer-inner { grid-template-columns: 1fr; }
+            .section, .section-inner { padding: 32px 16px !important; }
+            h2 { font-size: 22px !important; }
+            nav { padding: 0 16px; flex-wrap: wrap; height: auto; min-height: 56px; }
+            .nav-logo { font-size: 15px; padding: 12px 0; }
+            .nav-links { display: none; }
+            .nav-links.open { display: flex; flex-direction: column; width: 100%; padding: 8px 0 16px; gap: 4px; }
+            .nav-links a { padding: 10px 0; font-size: 15px; border-bottom: 1px solid rgba(74,55,40,0.08); display: block; }
+            .nav-links a:last-child { border-bottom: none; }
+            .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 12px 0; }
+            .hamburger span { display: block; width: 24px; height: 2px; background: #4A3728; border-radius: 2px; }
         }
+        @media (min-width: 769px) { .hamburger { display: none; } }
+    </style>
+</head>
+<body>
 
-        /* Mobile nav */
-        .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
-        .nav-toggle span { width: 24px; height: 2px; background-color: #4A3728; border-radius: 2px; }
-        @media (max-width: 768px) {
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; right: 0; background: #FFFBF7; border-bottom: 2px solid #F4A460; padding: 16px 24px; gap: 16px; z-index: 99; }
-            .nav-links.open { display: flex; }
-            .nav-toggle { display: flex; }
+    <nav>
+        <a href="index.html" class="nav-logo">MN Meditation Center</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>About Us</h1>
+        <p>A Buddhist meditation center serving the Twin Cities community since 2006.</p>
+    </div>
+
+    <div class="section">
+        <div class="two-col">
+            <div>
+                <h2>Our Practice</h2>
+                <p>Minnesota Meditation Center is a Buddhist meditation center rooted in the <a href="https://en.wikipedia.org/wiki/Dhammakaya_movement" target="_blank" style="color:#D2691E;">Dhammakaya tradition</a> of Buddhism, which emphasizes meditation as the path to inner peace and spiritual understanding. Our practice focuses on:</p>
+                <ul class="styled">
+                    <li><strong>Meditation for Inner Peace:</strong> Learning to find stillness and clarity through guided meditation</li>
+                    <li><strong>Mindfulness in Daily Life:</strong> Bringing awareness and compassion to everyday experiences</li>
+                    <li><strong>Community Support:</strong> Growing together in a welcoming, supportive environment</li>
+                    <li><strong>Accessible Teachings:</strong> Buddhist wisdom presented in ways that anyone can understand and apply</li>
+                </ul>
+                <p>Whether you're new to meditation or have been practicing for years, our tradition welcomes seekers of all backgrounds.</p>
+                <p style="margin-top: 16px;">Minnesota Meditation Center is part of a network of 16 meditation centers across the United States and over 100 centers in 34 countries. <a href="https://en.dhammakaya.net/branches/" target="_blank" style="color:#D2691E;">View the global network.</a></p>
+            </div>
+            <div class="image-wrap">
+                <img src="images/dhammakaya-tradition.jpg" alt="Dhammakaya Buddhist tradition - the practice followed at Minnesota Meditation Center in Osseo Minnesota">
+                <p style="font-size:11px; opacity:0.55; margin-top:6px; text-align:center;">Photo: <a href="https://commons.wikimedia.org/wiki/File:City_pilgrimage_organized_by_Wat_Phra_Dhammakaya.jpg" target="_blank" rel="noopener" style="color:inherit;">Wikimedia Commons</a>, CC BY-SA 4.0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-alt">
+        <div class="section-inner">
+            <div class="mission-box">
+                <h2>Our Mission</h2>
+                <p>To provide a peaceful, welcoming space where anyone can learn to meditate, find stillness, and connect with a community that genuinely cares about their wellbeing. Beyond <a href="schedule.html" style="color:#FFFBF7; text-decoration:underline;">weekly meditation classes</a>, Minnesota Meditation Center serves as a <a href="temple.html" style="color:#FFFBF7; text-decoration:underline;">Buddhist temple</a> for the Twin Cities community, offering traditional ceremonies and services.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Everyone Is Welcome</h2>
+        <p>Our center serves both the broader Twin Cities community and Minnesota's Thai and Lao communities. We offer English-language <a href="schedule.html" style="color:#D2691E;">meditation classes</a> on Wednesdays and Saturdays, and traditional Thai-language services on Sundays. Classes are led by our <a href="team.html" style="color:#D2691E;">resident monks</a>.</p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🧘</div>
+                <h3>Beginners & Experienced Practitioners</h3>
+                <p>Whether you are new to meditation or deepening an existing practice, you will find support here. Our instructors guide beginners through every step.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌍</div>
+                <h3>All Backgrounds</h3>
+                <p>Buddhist or not, religious or secular — everyone is welcome here.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🙏</div>
+                <h3>Thai & Lao Community</h3>
+                <p>Traditional Sunday services in Thai language serve our Southeast Asian community. <a href="temple.html" style="color:#D2691E;">Learn about our temple.</a></p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💛</div>
+                <h3>Always Free</h3>
+                <p>All meditation classes are free. No fees, no donations required.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCHEDULE CTA -->
+    <div class="cta-block">
+        <p>Classes run every Wednesday and Saturday. No registration needed, no experience required.</p>
+        <a href="schedule.html" class="cta-link">See the Schedule</a>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <h3>Minnesota Meditation Center</h3>
+                <p>A Dhammakaya Buddhist temple welcoming all who seek inner peace, mindfulness, and community.</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p><address style="font-style:normal;">📍 <a href="https://maps.google.com/?q=224+1st+Ave+NW,+Osseo,+MN+55369" target="_blank" style="color:#FFFBF7;">
+                <span itemprop="streetAddress">224 1st Ave NW</span><br>
+                <span itemprop="addressLocality">Osseo</span>, <span itemprop="addressRegion">MN</span> <span itemprop="postalCode">55369</span>
+                </a></address></p>
+                <p>📞 <a href="tel:+15612299694" style="color:#FFFBF7;">(561) 229-9694</a></p>
+                <p style="font-size:13px; opacity:0.85;">📞 <a href="tel:+17638626122" style="color:#FFFBF7;">(763) 862-6122</a> (main office)</p>
+                <p><a href="https://wa.me/15612299694" target="_blank" style="color:#FFFBF7; display:inline-flex; align-items:center; gap:6px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FFFBF7"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    WhatsApp
+                </a></p>
+            </div>
+            <div>
+                <h3>Weekly Schedule</h3>
+                <p><strong>Wednesday:</strong> 4:00 PM – 5:00 PM<br>
+                <strong>Saturday:</strong> 3:00 PM – 4:30 PM<br>
+                <strong>Sunday:</strong> 9:30 AM (Thai Services)</p>
+                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All classes free • No experience necessary</p>
+            </div>
+        </div>
+        <div class="footer-nav" style="max-width:1100px; margin:0 auto 18px; padding-top:0; display:flex; gap:24px; flex-wrap:wrap;">
+            <a href="index.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Home</a>
+            <a href="about.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">About</a>
+            <a href="schedule.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Schedule</a>
+            <a href="visit.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Visit</a>
+            <a href="get-involved.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Get Involved</a>
+            <a href="team.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Meet the Team</a>
+            <a href="temple.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Buddhist Temple</a>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                <a href="https://www.facebook.com/mmc55369/" target="_blank" style="color:#FFFBF7; opacity:0.95; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FFFBF7"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    Follow us on Facebook
+                </a>
+            </p>
+            <p style="margin-top:10px;">© 2026 Minnesota Meditation Center. All rights reserved.</p>
+            <p>Dhammakaya Buddhist Temple & Meditation Center | 501(c)(3) Nonprofit</p>
+            <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
         }
+    </script>
 
-        /* ── Mobile improvements ───────────────────────────── */
-        @media (max-width: 768px) {
-            .hero h1, .page-header h1 { font-size: 28px !important; }
-            .hero p, .page-header p { font-size: 15px !important; }
-            .section, .section-alt, .section-inner { padding: 32px 16px !important; }
+</body>
+</html>
+           .section, .section-alt, .section-inner { padding: 32px 16px !important; }
             .grid-2, .grid-3, .cards, .feature-grid, .info-grid, .steps-grid, .ways-grid { 
                 grid-template-columns: 1fr !important; 
             }
