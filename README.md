@@ -64,10 +64,10 @@ The live site updates within a minute or two.
 |---|---|
 | Web strategy | Chris Peterson |
 | English meditation teacher | Monk Choo (Wanchalerm Samawangso) |
-| Thai translation | Aom |
+| Thai translation | Volunteers |
 
 ---
 
 ## Status
 
-Active. Outreach phase in progress as of early 2026.
+Bringing peace since 2026. 
