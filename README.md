@@ -15,7 +15,7 @@ Public website for [Minnesota Meditation Center](https://mnmeditationcenter.org)
 | `team.html` | /team | Resident teachers |
 | `temple.html` | /temple | Thai community and temple services |
 | `get-involved.html` | /get-involved | How to connect and support |
-| `th/index.html` | /th/ | Thai-language homepage (in progress) |
+| `th/index.html` | /th/ | Thai-language homepage |
 
 Geo-targeted landing pages are in the `/geo/` directory.
 
