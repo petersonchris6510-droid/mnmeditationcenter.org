@@ -176,27 +176,24 @@
             border-radius: 20px;
             font-size: 13px;
         }
-        @media (max-width: 768px) {
-            .nav-links a.lang-switch { display: none; }
-        }
             .nav-logo { font-size: 14px; }
             .nav-links { gap: 14px; }
             .nav-links a { font-size: 12px; }
         }
 
-        .lang-switch-mobile {
-            display: none;
+        .lang-switch {
             font-family: 'Montserrat', sans-serif;
-            font-size: 11px;
+            font-size: 13px;
             font-weight: 600;
             color: #D2691E;
             text-decoration: none;
             border: 1px solid #F4A460;
-            padding: 3px 8px;
+            padding: 4px 10px;
             border-radius: 20px;
             white-space: nowrap;
+            background: transparent;
         }
-        .lang-switch-mobile:hover { background: #FFF3E0; }
+        .lang-switch:hover { background: #FFF3E0; }
         .come-as-you-are { display: inline; }
 
         /* HERO */
@@ -206,7 +203,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, rgba(210,105,30,0.6) 0%, rgba(244,164,96,0.5) 100%);
+            background: linear-gradient(135deg, rgba(210,105,30,0.75) 0%, rgba(244,164,96,0.65) 100%);
             overflow: hidden;
         }
         .hero::before {
@@ -469,7 +466,7 @@
             .nav-links a:last-child { border-bottom: none; }
             .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 12px 0; }
             .hamburger span { display: block; width: 24px; height: 2px; background: #4A3728; border-radius: 2px; }
-            .lang-switch-mobile { display: inline-block; }
+            #langToggle { font-size: 11px; padding: 3px 8px; }
             .come-as-you-are { display: block; margin-top: 4px; }
         }
         @media (min-width: 769px) { .hamburger { display: none; } }
@@ -486,9 +483,8 @@
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="/th/" class="lang-switch">ภาษาไทย</a></li>
         </ul>
-        <a href="/th/" class="lang-switch lang-switch-mobile" id="langSwitchMobile">ภาษาไทย</a>
+        <a href="/th/" class="lang-switch" id="langToggle">ภาษาไทย</a>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </div>
