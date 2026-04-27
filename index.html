@@ -42,12 +42,11 @@
       "@type": "BuddhistTemple",
       "name": "Minnesota Meditation Center",
       "alternateName": "MMC",
-      "url": "https://mnmeditationcenter.org",
+      "url": "https://mnmeditationcenter.org/",
       "logo": "https://mnmeditationcenter.org/apple-touch-icon.png",
       "image": "images/hero-congregation.png",
-      "description": "A Dhammakaya Buddhist temple in Osseo, Minnesota offering free guided meditation classes for all experience levels. Serving the Minneapolis Twin Cities including Maple Grove, Brooklyn Park, and Plymouth.",
+      "description": "A Dhammakaya Buddhist temple in Osseo, Minnesota offering free guided meditation sessions for all experience levels. Serving the Minneapolis Twin Cities including Maple Grove, Brooklyn Park, and Plymouth.",
       "telephone": "+15612299694",
-      "email": "",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "224 1st Ave NW",
@@ -451,6 +450,7 @@
             .nav-links a:last-child { border-bottom: none; }
             .hamburger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 12px 0; }
             .hamburger span { display: block; width: 24px; height: 2px; background: #4A3728; border-radius: 2px; }
+            #langSwitchMobile { display: flex !important; }
         }
         @media (min-width: 769px) { .hamburger { display: none; } }
     </style>
@@ -459,15 +459,16 @@
 
     <!-- NAV -->
     <nav>
-        <a href="index.html" class="nav-logo">MN Meditation Center</a>
+        <a href="/" class="nav-logo">MN Meditation Center</a>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="/" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="schedule.html">Schedule</a></li>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
-            <li><a href="th/index.html" class="lang-switch">ภาษาไทย</a></li>
+            <li><a href="/th/" class="lang-switch">ภาษาไทย</a></li>
         </ul>
+        <a href="/th/" class="lang-switch" id="langSwitchMobile" style="display:none;">ภาษาไทย</a>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </div>
@@ -478,15 +479,15 @@
         <div class="hero-content">
             <h1>Minnesota Meditation Center</h1>
             <p>A meditation center and Buddhist temple in Osseo, MN. Led by resident monks. Welcoming all seekers.</p>
-            <a href="schedule.html" class="cta-button">View Class Schedule</a>
+            <a href="schedule.html" class="cta-button">View Schedule</a>
         </div>
     </section>
 
     <!-- WELCOME -->
     <section class="welcome">
         <h2>Meditation in Osseo, Open to Everyone</h2>
-        <p>Minnesota Meditation Center is a meditation center and Buddhist temple in Osseo. Our resident monks lead meditation classes and traditional Buddhist practices for our community. Weekly sessions are open to everyone.</p>
-        <p>Classes run every Wednesday and Saturday. There is no cost to attend, no registration required, and no experience necessary. Just show up.</p>
+        <p>Minnesota Meditation Center is a meditation center and Buddhist temple in Osseo. Our resident monks lead meditation sessions and traditional Buddhist practices for our community. Weekly sessions are open to everyone.</p>
+        <p>Sessions run every Wednesday and Saturday. There is no cost to attend, no registration required, and no experience necessary. Come as you are.</p>
     </section>
 
     <div class="divider"></div>
@@ -507,34 +508,35 @@
                 <p>Join us for guided meditation sessions</p>
             </div>
             <div class="schedule-notice">
-                <strong>Important:</strong> Schedule changes once monthly for special events. Please check calendar before visiting or call to confirm.
+                For special event updates, follow us on <a href="https://www.facebook.com/mmc55369/" target="_blank" style="color:#D2691E; font-weight:600;">Facebook</a>.
             </div>
             <div class="schedule-grid">
                 <div class="schedule-card">
-                    <div class="schedule-day"><a href="visit.html">Wednesday</a></div>
-                    <div class="schedule-time"><a href="visit.html">4:00 PM – 5:00 PM</a></div>
+                    <div class="schedule-day"><a href="schedule.html">Wednesday</a></div>
+                    <div class="schedule-time"><a href="schedule.html">4:00 PM – 5:00 PM</a></div>
                     <div class="schedule-desc">Guided meditation session. Perfect for beginners and experienced practitioners.</div>
-                    <span class="free-badge">Free</span>
+                    <a href="schedule.html" class="free-badge" style="text-decoration:none;">Free</a>
                 </div>
                 <div class="schedule-card">
-                    <div class="schedule-day"><a href="visit.html">Saturday</a></div>
-                    <div class="schedule-time"><a href="visit.html">3:00 PM – 4:30 PM</a></div>
+                    <div class="schedule-day"><a href="schedule.html">Saturday</a></div>
+                    <div class="schedule-time"><a href="schedule.html">3:00 PM – 4:30 PM</a></div>
                     <div class="schedule-desc">90-minute session including guided meditation, an introduction, and a wisdom talk. Beginners especially welcome.</div>
-                    <span class="free-badge">Free</span>
+                    <a href="schedule.html" class="free-badge" style="text-decoration:none;">Free</a>
                 </div>
                 <div class="schedule-card">
-                    <div class="schedule-day"><a href="visit.html">Sunday</a></div>
-                    <div class="schedule-time"><a href="visit.html">9:30 AM</a></div>
+                    <div class="schedule-day"><a href="schedule.html">Sunday</a></div>
+                    <div class="schedule-time"><a href="schedule.html">9:30 AM</a></div>
                     <div class="schedule-desc">Thai language services. Traditional Dhammakaya Buddhist practice.</div>
-                    <span class="free-badge">Free</span>
+                    <a href="schedule.html" class="free-badge" style="text-decoration:none;">Free</a>
                 </div>
             </div>
+            <p style="text-align:center; margin-top:16px; font-size:14px; color:#7B5C48;">Also available Mondays online. Join a <a href="schedule.html" style="color:#D2691E; font-weight:600;">virtual session</a>.</p>
         </div>
     </div>
 
     <!-- FIRST VISIT -->
     <div class="first-visit">
-        <h2>Your First Visit</h2>
+        <h2><a href="visit.html" style="color:#4A3728; text-decoration:none;">Your First Visit</a></h2>
         <div class="two-col">
             <ul class="feature-list">
                 <li>
@@ -563,7 +565,7 @@
     <!-- BUDDHIST COMMUNITY BANNER -->
     <div style="background:#F4EDE4; padding:48px 24px; text-align:center;">
         <div style="max-width:680px; margin:0 auto;">
-            <h2 style="font-family:'Montserrat',sans-serif; font-size:22px; font-weight:700; color:#4A3728; margin-bottom:12px;">For Our Buddhist Community</h2>
+            <h2 style="font-family:'Montserrat',sans-serif; font-size:22px; font-weight:700; color:#4A3728; margin-bottom:12px;"><a href="temple.html" style="color:#4A3728; text-decoration:none;">For Our Buddhist Community</a></h2>
             <p style="font-family:'Nunito',sans-serif; font-size:17px; line-height:1.7; color:#5a4535;">Sunday morning traditional services in Thai. Merit-making, ceremonies, and community gatherings. All are welcome.</p>
         </div>
     </div>
@@ -584,7 +586,7 @@
                 <a href="anoka-meditation.html" style="background:white; border:1px solid #F4A460; color:#D2691E; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:600; padding:8px 16px; border-radius:20px; text-decoration:none;">Anoka</a>
                 <a href="twin-cities-northwest-meditation.html" style="background:white; border:1px solid #F4A460; color:#D2691E; font-family:'Montserrat',sans-serif; font-size:13px; font-weight:600; padding:8px 16px; border-radius:20px; text-decoration:none;">Twin Cities Northwest</a>
             </div>
-            <p style="margin-top:16px; font-size:14px; color:#7B5C48;">Anywhere in Minnesota? <a href="free-meditation-minnesota.html" style="color:#D2691E; font-weight:600;">Find free meditation near you.</a></p>
+            <p style="margin-top:16px; font-size:14px; color:#7B5C48;">Elsewhere in Minnesota? <a href="free-meditation-minnesota.html" style="color:#D2691E; font-weight:600;">Find a free meditation session near you.</a></p>
         </div>
     </div>
 
@@ -616,14 +618,14 @@
             </div>
             <div>
                 <h3>Weekly Schedule</h3>
-                <p><strong>Wednesday:</strong> 4:00 PM – 5:00 PM<br>
-                <strong>Saturday:</strong> 3:00 PM – 4:30 PM<br>
-                <strong>Sunday:</strong> 9:30 AM (Thai Services)</p>
-                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All classes free • No experience necessary</p>
+                <p><a href="schedule.html" style="color:#FFFBF7;"><strong>Wednesday:</strong> 4:00 PM – 5:00 PM</a><br>
+                <a href="schedule.html" style="color:#FFFBF7;"><strong>Saturday:</strong> 3:00 PM – 4:30 PM</a><br>
+                <a href="schedule.html" style="color:#FFFBF7;"><strong>Sunday:</strong> 9:30 AM (Thai Services)</a></p>
+                <p style="margin-top:8px; font-size:13px; opacity:0.8;">All sessions free • No experience necessary</p>
             </div>
         </div>
         <div class="footer-nav" style="max-width:1100px; margin:0 auto 18px; padding-top:0; display:flex; gap:24px; flex-wrap:wrap;">
-            <a href="index.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Home</a>
+            <a href="/" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Home</a>
             <a href="about.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">About</a>
             <a href="schedule.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Schedule</a>
             <a href="visit.html" style="color:#FFFBF7; opacity:0.9; text-decoration:none; font-family:Montserrat,sans-serif; font-size:14px; font-weight:500;">Visit</a>
@@ -639,8 +641,10 @@
                 </a>
             </p>
             <p style="margin-top:10px;">© 2026 Minnesota Meditation Center. All rights reserved.</p>
-            <p>Dhammakaya Buddhist Temple & Meditation Center | 501(c)(3) Nonprofit</p>
+            <p>A Dhammakaya Buddhist temple and meditation center. Part of the <a href="https://en.dhammakaya.net/" target="_blank" style="color:#FFFBF7; opacity:0.9;">Dhammakaya network</a>.</p>
+            <p style="margin-top:4px;">Minnesota Meditation Center | 501(c)(3) Nonprofit</p>
             <p style="margin-top:4px; opacity:0.72;">EIN: 20-8216526</p>
+            <p style="margin-top:8px;"><a href="get-involved.html" style="color:#FFFBF7; opacity:0.85; font-size:13px;">Support our work</a></p>
         </div>
     </footer>
 
